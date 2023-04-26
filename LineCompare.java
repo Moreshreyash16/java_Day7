@@ -3,6 +3,20 @@ package Bridgelabz.Day7;
 import java.util.Scanner;
 
 public class LineCompare {
+    public static void compare(double L1, double L2){
+        if (L1==L2){
+            System.out.println("Line1: " + L1 + " Line2: " + L2);
+            System.out.println("Both line are equal");
+
+        } else if (L1>L2) {
+            System.out.println("Line1: " + L1 + " Line2: " + L2);
+            System.out.println("Line1 is greater");
+        }
+        else{
+            System.out.println("Line1: " + L1 + " Line2: " + L2);
+            System.out.println("Line2 is greater");
+        }
+    }
     public static void main(String[] args) {
         double sum1=0 , sum2=0;
         Scanner sc = new Scanner(System.in);
@@ -22,10 +36,8 @@ public class LineCompare {
                 sum2 = Math.sqrt(x + y);
             }
         }
-        String sumofLine1= String.valueOf(sum1);
-        String sumofLine2= String.valueOf(sum2);
-        if (sumofLine1.equals(sumofLine1)){
-            System.out.println("Both line are equal");
-        }
+//        String sumofLine1= String.valueOf(sum1);
+//        String sumofLine2= String.valueOf(sum2);
+        compare(sum1,sum2);
     }
 }
